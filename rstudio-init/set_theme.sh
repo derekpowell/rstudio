@@ -3,7 +3,6 @@
 THEME=${THEME:=none}
 
 if [ "$THEME" != none ]; then
-	# echo "uiPrefs={'theme' : '$THEME'}"
 	mkdir -p /home/rstudio/.rstudio/monitored/user-settings
 	echo "uiPrefs={\"theme\" : \"$THEME\"}" > \
 	/home/rstudio/.rstudio/monitored/user-settings/user-settings
