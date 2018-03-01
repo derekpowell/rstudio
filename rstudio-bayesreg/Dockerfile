@@ -10,14 +10,14 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     BayesFactor \
     boot \
     brms \
+    fitdistrplus \
     ggmcmc \
     lme4 \
     rstanarm \
-    fitdistrplus \
 && install2.r --error \
-	--deps NA \
-	broom \
 	bayesboot \	
+	broom \
+	fitdistrplus \
 	rms \
 	viridis \
 && R --no-restore --no-save -e 'devtools::install_github("mjskay/tidybayes")' \
