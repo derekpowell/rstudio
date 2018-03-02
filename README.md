@@ -25,8 +25,18 @@ It features:
 * Bootstrapping tools: [boot](https://cran.r-project.org/web/packages/boot/boot.pdf) and [bayesboot](https://github.com/rasmusab/bayesboot)
 * Modeling and plotting tools: [broom](https://github.com/tidyverse/broom), [tidybayes](https://github.com/mjskay/tidybayes), and [ggmcmc](https://github.com/xfim/ggmcmc)
 * Non-bayesian regression tools: [lme4](https://github.com/lme4/lme4) and [rms](https://www.r-bloggers.com/introduction-to-the-rms-package/)
-* Misc.: fitdistrplus, viridis, ggthemes
+* Misc: fitdistrplus, viridis, ggthemes
 
 ## rstudio-graphmod
 
-_Future project_: will add graphical modeling tools: bnlearn, BDgraph, bnstruct, RgraphViz, graph, RBGL, lavaan, simsem, tidygraph, ggraph, ggnetwork, geomnet, semPlot, corrplot(?)
+Adds a collection of packages for graphical modeling.
+
+It features:
+
+* Structure learning and inference: graph, bnlearn, bnstruct, BDgraph (undirected)
+* Structural Equation Modeling: lavaan, simsem
+* Plotting tools: tidygraph, ggraph, ggnetwork, geomnet, ggrepel, semPlot
+* Misc: multidplyr
+
+
+
