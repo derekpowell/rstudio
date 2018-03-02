@@ -6,7 +6,11 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     libxt-dev \
 && install2.r --error \
-    --deps TRUE \
+    bayesboot \ 
+    broom \
+    fitdistrplus \
+    rms \
+    viridis \
     BayesFactor \
     boot \
     brms \
@@ -14,11 +18,6 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     ggmcmc \
     lme4 \
     rstanarm \
-&& install2.r --error \
-	bayesboot \	
-	broom \
-	fitdistrplus \
-	rms \
-	viridis \
-&& R --no-restore --no-save -e 'devtools::install_github("mjskay/tidybayes")' \
-&& R --no-restore --no-save -e 'devtools::install_github("rmcelreath/rethinking")'
+&& installGithub.r \
+    mjskay/tidybayes@1432704feef258e068fb4c8304089f2d8f67cf7f \
+    rmcelreath/rethinking@1.59
