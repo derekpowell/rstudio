@@ -4,9 +4,16 @@ A single repository for all my RStudio docker image layers, to be automatically 
 
 ## rstudio-init
 
-This draws on the most-recently versioned Rocker/tidyverse image (3.4.3 as of March 1, 2018). This is a base image where I add scripts to the image `\init`, primarily to add customizations and improve workflow.
+This draws on the most-recently versioned rocker/verse image, currently `rocker/verse:3.4.3`. This is a base image where I add scripts to the image `\init`, primarily to add customizations and improve workflow.
+
+Takes the extra arguments:
+
+* Set the theme with `-e THEME="Solarized Dark"` or any other RStudio theme
+* Configure git with `GIT_USER` and `GIT_EMAIL` environment variables
 
 ## rstudio-bayesreg
+
+_AUTOMATEDBUILDS CURRENTLY FAILING, PUSHED LOCAL BUILD 3/2/18, 1:52 PM_
 
 This image adds a collection of packages for Bayesian regression and multilevel modeling. The basis for most of these tools is the probabilistic programming language [Stan](http://mc-stan.org/).
 
@@ -22,4 +29,4 @@ It features:
 
 ## rstudio-graphmod
 
-_Future project_: Adds graphical modeling tools: bnlearn, BDgraph, bnstruct, RgraphViz, graph, RBGL, lavaan, simsem, tidygraph, ggraph, ggnetwork, geomnet, semPlot, corrplot(?)
+_Future project_: will add graphical modeling tools: bnlearn, BDgraph, bnstruct, RgraphViz, graph, RBGL, lavaan, simsem, tidygraph, ggraph, ggnetwork, geomnet, semPlot, corrplot(?)
