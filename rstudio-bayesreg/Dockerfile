@@ -9,15 +9,14 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     bayesboot \
     # broom \
     fitdistrplus \
-    rms \
+    # rms \
     # viridis \
     BayesFactor \
     boot \
     brms \
-    fitdistrplus \
     ggmcmc \
     lme4 \
-    rstanarm \
+    # rstanarm \
     tidybayes \
 && installGithub.r \
     rmcelreath/rethinking@1.59

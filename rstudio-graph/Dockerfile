@@ -11,18 +11,18 @@ RUN apt-get -y --no-install-recommends install \
 && install2.r --error \
 	# BDgraph \
 	bnlearn \
-	bnstruct \
-	geomnet \
-	ggnetwork \
+	# bnstruct \
+	# geomnet \
+	# ggnetwork \
 	ggraph \
 	ggrepel \
 	lavaan \
 	semPlot \
 	simsem \
-	tidygraph \
-	gRain \
-	gRim \
+	# tidygraph \
+	# gRain \
+	# gRim \
 	HydeNet \
-	blavaan \
+	# blavaan \
 && installGithub.r \
 	hadley/multidplyr@0085ded4048d7fbe5079616c40640dbf5982faf2
