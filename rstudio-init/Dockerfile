@@ -1,5 +1,5 @@
 ####### Dockerfile #######
-FROM rocker/verse:3.4.3
+FROM rocker/verse:3.5.2
 
 ENV DEBIAN_FRONTEND noninteractive
 
