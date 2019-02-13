@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     libxt-dev \
-&& install2.r --error \
+&& install2.r --error --skipinstalled \
     bayesboot \
     # broom \
     fitdistrplus \

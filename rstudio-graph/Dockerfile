@@ -8,7 +8,7 @@ RUN apt-get -y --no-install-recommends install \
 	jags \
 && R --no-restore --no-save -e \
 	'BiocInstaller::biocLite(c("graph","Rgraphviz","RBGL"))' \
-&& install2.r --error \
+&& install2.r --error --skipinstalled \
 	# BDgraph \
 	bnlearn \
 	# bnstruct \
