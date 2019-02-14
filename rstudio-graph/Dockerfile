@@ -7,7 +7,7 @@ RUN apt-get -y --no-install-recommends install \
 	libudunits2-dev \
 	jags \
 && R --no-restore --no-save -e \
-	'BiocInstaller::biocLite(c("graph","Rgraphviz","RBGL"))' \
+	'BiocManager::install(c("graph","Rgraphviz","RBGL"), update=FALSE)' \
 && install2.r --error --skipinstalled \
 	# BDgraph \
 	bnlearn \
