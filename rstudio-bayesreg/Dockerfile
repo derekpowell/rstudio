@@ -18,5 +18,6 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     lme4 \
     # rstanarm \
     tidybayes \
+	ggrepel \
 && installGithub.r \
     rmcelreath/rethinking@1.59

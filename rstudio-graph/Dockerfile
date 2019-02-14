@@ -15,7 +15,6 @@ RUN apt-get -y --no-install-recommends install \
 	# geomnet \
 	# ggnetwork \
 	ggraph \
-	ggrepel \
 	lavaan \
 	semPlot \
 	simsem \
