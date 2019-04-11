@@ -2,6 +2,15 @@
 
 A single repository for all my RStudio docker image layers, to be automatically built on docker cloud. I plan for these images to form a linear stack.
 
+Launch and set all options:
+
+```
+docker run -d -p 8787:8787 -v "`pwd`":/home/rstudio/working \
+ -e PASSWORD=p@ssw0rd12345 -e ROOT=TRUE -e THEME="Solarized Dark" \
+ -e GIT_USER="Your Name" -e GIT_EMAIL="your_email@domain.com" \
+ derekpowell/rstudio-bayesreg
+```
+
 ## rstudio-init
 
 This draws on the most-recently versioned rocker/verse image, currently `rocker/verse:3.5.2`. This is a base image where I add scripts to the image `/init`, primarily to add customizations like keybindings and improve workflow.
